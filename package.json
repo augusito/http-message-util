@@ -1,6 +1,6 @@
 {
   "name": "http-message-util",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Utility classes and constants for use with HTTP messages",
   "author": "Augustus Kamau",
   "license": "MIT",
