@@ -2,26 +2,24 @@
  * Representation of HTTP methods.
  */
 export enum Method {
-  // The `GET` variant.
+  // The `GET` variant
   Get = 0,
-  // The `POST` variant.
+  // The `POST` variant
   Post,
-  // The `HEAD` variant.
-  Head,
-  // The `DELETE` variant.
-  Delete,
-  // The `PUT` variant.
+  // The `PUT` variant
   Put,
-  // The `PATCH` variant.
+  // The `HEAD` variant
+  Head,
+  // The `PATCH` variant
   Patch,
-  // The `ALL` variant.
-  All,
-  // The `OPTIONS` variant.
-  Options,
-  // The `TRACE` variant.
+  // The `DELETE` variant
+  Delete,
+  // The `TRACE` variant
   Trace,
-  // The `CONNECT` variant.
+  // The `CONNECT` variant
   Connect,
+  // The `OPTIONS` variant
+  Options,
 }
 
 /**
@@ -30,12 +28,11 @@ export enum Method {
 export const METHOD_TEXT: Readonly<Record<Method, string>> = {
   [Method.Get]: 'GET',
   [Method.Post]: 'POST',
-  [Method.Head]: 'HEAD',
-  [Method.Delete]: 'DELETE',
   [Method.Put]: 'PUT',
+  [Method.Head]: 'HEAD',
   [Method.Patch]: 'PATCH',
-  [Method.All]: 'ALL',
-  [Method.Options]: 'OPTIONS',
+  [Method.Delete]: 'DELETE',
   [Method.Trace]: 'TRACE',
   [Method.Connect]: 'CONNECT',
+  [Method.Options]: 'OPTIONS',
 };
